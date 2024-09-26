@@ -177,14 +177,20 @@
     <!-- Ter Start Coding Here-->
 
     <!-- Nook Start Coding Here-->
-    <section class="flex justify-center mt-20"></section>
-      <div class="w-full bg-[#E7F5FF] max-w-[69.813rem] flex flex-col justify-center items-center rounded-3xl mx-auto">
-        <div class="my-[4.25rem]">
-        <p class="text-4xl font-semibold  text-[#090F4E]">Sign up to our newsletter</p>
+    <!-- Newsletter -->
+    <!-- Newsletter -->
+    <!-- Newsletter -->
+    <section class="flex justify-center mt-20">
+      <div class="w-full bg-[#E7F5FF] max-w-[69.813rem] flex flex-col justify-center items-center rounded-3xl mx-auto flex-shrink-0 
+                 max-sm:rounded-none max-sm:max-w-none max-sm:w-full "> <!--Blue box-->
+        
+        <div class="my-[4.25rem]"> <!--Content in Blue Box-->
+        <p class="text-4xl font-semibold  text-[#090F4E] text-center">Sign up to our newsletter</p>
         <p class="text-lg font-normal text-center mt-7 text-[#63657E]" >Receive lastest news, updates and many other</p>
         <p class="text-lg font-normal text-center mt-2 text-[#63657E]" >news every weeks</p>
         
-        <div class="w-full flex justify-center relative items-center max-w-[30rem] mt-10">
+        <!--Button and Input Email-->
+        <div class="w-full flex justify-center relative items-center max-w-[30rem] mt-10"> 
             <button 
                 class="bg-[#2231a5] w-11 h-11 rounded-full text-white 
                         font-bold absolute right-3 cursor-pointer shadow-lg active:shadow-inner active:bg-[#181d43] ">&#62;</button>
@@ -199,14 +205,61 @@
     </section>
 
     <!-- Footer -->
+    <!-- Footer -->
     <Footer class="w-full max-w-[69.813rem] mx-auto flex flex-row justify-between mt-20">
       <div>
         <div class="w-full mx-auto text-lg font-normal text-[#63657E]">
           <!-- logo -->
-          <img src="./img-Nuk/logo.png" alt="logo">
+          <img src="./img-Nuk/logo.png" alt="logo" class="max-sm:px-4">
+
+          <!-- Responsive design that replaces the Desktop version  -->
+          <!-- Responsive design that replaces the Desktop version  -->
+          <!-- Responsive design that replaces the Desktop version  -->
+          <div class="text-lg font-normal text-[#63657E] mt-10 block sm:hidden max-sm:px-4">
+            Winged moving moveth created for shall and devide the their day mail midst shall hath doesn't won't for.Midst life.Over a great night
+          </div>
+
+          <div class="flex relative left-2 gap-4 mt-10 flex-shrink-0 sm:hidden max-sm:px-2 ">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="./img-NUK/facebook.png" alt="google" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <img src="./img-Nuk/twister-mobile.png" alt="twitter" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">  
+              <img src="./img-Nuk/linkedin-mobile.png" alt="instagram" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>  
+            <a href="https://www.youtube.com/" target="_blank">  
+              <img src="./img-Nuk/youtube-mobile.png" alt="linkedin" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>  
+          </div>
+
+          <div class="sm:hidden max-sm:px-2 ">
+              <div class="pt-12 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Customer Support</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+              
+              <div class="pt-10 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Quick Links</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+          
+              <div class="pt-10 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Resources</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+
+            </div>
+
+            <p class="flex justify-center pt-11 pb-12 text-lg font-normal text-[#8480AE] sm:hidden max-sm:px-2">Copyright &copy;2021 Quicklinks</p>
+                
+            <!-- The Desktop version -->
+            <!-- The Desktop version -->
+            <!-- The Desktop version -->
 
           <!-- Mail -->
-          <div id="mail" class="mt-16 mb-5">
+          <div id="mail" class="mt-16 mb-5 max-sm:hidden">
             <img src="./img-Nuk/Mail.png" alt="mail" class="inline pr-2"> 
             <a href="mailto:quickspace@gmail.com">
               <span class="hover:underline">quickspace@gmail.com</span>
@@ -214,7 +267,7 @@
           </div>
 
           <!-- Telephone Number -->
-          <div id="tel">
+          <div id="tel" class="max-sm:hidden">
             <a href="tel:548457369555">
               <img src="./img-Nuk/Tel.png" alt="tel" class="inline pr-3 "> <span class="hover:underline">548 457 3695 55</span>
             </a>
@@ -222,8 +275,8 @@
         </div>
       </div>
 
-          <!-- Home -->
-      <div>
+      <!-- Home -->
+      <div class="max-sm:hidden">
         <p class="text-2xl font-medium text-[#090F4E]">Home</p>
         <div class="flex flex-col mt-10 gap-4">
           <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Accesibility</a>
@@ -234,7 +287,7 @@
         </div>
       </div>
           <!-- Page -->
-      <div>
+      <div class="max-sm:hidden">
         <p class="text-2xl font-medium text-[#090F4E]">Pages</p>
         <div class="flex flex-col mt-10 gap-4">
           <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Blogs</a>
@@ -245,7 +298,7 @@
         </div>
       </div>
           <!-- Our Address -->
-      <div >
+      <div class="max-sm:hidden">
         <p class="text-2xl font-medium text-[#090F4E]">Our Address</p>
         <div class="text-lg font-normal text-[#63657E] mt-10 gap-1">
           <a href="https://maps.app.goo.gl/S7gWHhuBFe3bQV2f8" target="_blank">
@@ -270,7 +323,7 @@
 
     </Footer>
     
-    <footer class="w-full max-w-[69.813rem] mx-auto flex justify-between mt-[6rem] text-lg font-normal text-[#63657E]">
+    <footer class="w-full max-w-[69.813rem] mx-auto flex justify-between mt-[6rem] text-lg font-normal text-[#63657E] max-sm:hidden">
         <div>
           <p>Copyright &copy;2021 Quickspace. All Rights Reserved</p>
         </div>
