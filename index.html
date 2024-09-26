@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = {
+    <script>
+    tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
@@ -13,6 +14,11 @@
         }
       }
     }
+    //#oleang script for fade text
+    window.onload = () => {
+    document.getElementById('fade-text').classList.add('opacity-100');
+    };
+    //----------------------------
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,11 +46,13 @@
     <!-- Cherry Start Coding Here-->
 
     <!-- OLEANG Start Coding Here-->
-    <section class="flex flex-col items-center md:mt-[0.25rem]">
+    <section id="fade-text" class="flex flex-col items-center md:mt-[0.25rem] opacity-0 transition-opacity duration-1000 ease-in-out">
+        <!--responsive for mobile and tablet-->
         <header1 class="flex flex-col md:hidden">
             <h1 class="text-4xl text-center mt-20 font-medium text-blue-950">Perfect Solution </h1>
             <h1 class="text-4xl text-center font-medium text-blue-950">For Your Business</h1>
         </header1>
+        <!--responsive for desktop-->
         <header2 class="flex flex-col max-[768px]:hidden">
             <h1 class="text-5xl text-center mt-20 font-medium text-blue-950">Perfect Solution For Your Business</h1>
         </header2>
@@ -52,7 +60,7 @@
             <p class="flex justify-center items-center text-center text-s mt-10 mx-[5rem] md:max-w-[50rem] md:text-lg text-gray-500">Graphs displaying your performance for metrics like follower evolution, average rate per post and reach and impressions to give you the insights.</p>
         </article>
         <div class="flex flex-col md:flex-row items-center justify-center md:max-w-[70rem] md:min-w-[70rem] md:mt-1">
-        <perfect-box1 class="mx-10 mt-10 bg-white border-white border-l border-b border-r rounded-b-md md:border-t md:pl-7 md:rounded-md shadow-md md:shadow-lg md:order-2 max-w-[30rem]">
+        <perfect-box1 class="mx-10 mt-10 bg-white border-white border-l border-b border-r rounded-b-md md:border-t md:pl-7 md:rounded-md shadow-md md:shadow-lg md:order-2 max-w-[30rem] transform transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-6 hover:shadow-2xl hover:opacity-80">
             <div class="mx-3 p-4">
                 <svg width="80" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="106" height="106" rx="20" fill="#E9EDFF"/>
@@ -89,7 +97,7 @@
                 </div>
             </div>
         </perfect-box1>
-        <perfect-box2 class="mx-10 mt-10 bg-white md:order-1 max-w-[30rem]">
+        <perfect-box2 class="mx-10 mt-10 bg-white md:order-1 max-w-[30rem] transform transition-transform duration-300 hover:scale-110">
             <div class="mx-3 p-4">
                 <svg width="80" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="106" height="106" rx="20" fill="#FFF0E9"/>
@@ -126,7 +134,7 @@
                 </div>
             </div>
         </perfect-box2>
-        <perfect-box3 class="mx-10 mt-10 bg-white md:order-3 max-w-[30rem]">
+        <perfect-box3 class="mx-10 mt-10 bg-white md:order-3 max-w-[30rem] transform transition-transform duration-300 hover:scale-110">
             <div class="mx-3 p-4">
                 <svg width="80" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="106" height="106" rx="20" fill="#FFF6DD"/>
@@ -316,5 +324,165 @@
         </div>
       </section>
     <!-- Nook Start Coding Here-->
+    <!-- Nook Start Coding Here-->
+    <!-- Newsletter Section desktop and responsive -->
+    <section class="flex justify-center mt-20"></section>
+      <div class="w-full bg-[#E7F5FF] max-w-[69.813rem] flex flex-col justify-center items-center rounded-3xl mx-auto flex-shrink-0 
+                 max-sm:rounded-none max-sm:max-w-none max-sm:w-full "> <!--Blue box-->
+        
+        <div class="my-[4.25rem]"> <!--Content in Blue Box-->
+        <p class="text-4xl font-semibold  text-[#090F4E] text-center">Sign up to our newsletter</p>
+        <p class="text-lg font-normal text-center mt-7 text-[#63657E]" >Receive lastest news, updates and many other</p>
+        <p class="text-lg font-normal text-center mt-2 text-[#63657E]" >news every weeks</p>
+        
+        <!--Button and Input Email-->
+            <div class="w-full flex justify-center relative items-center max-w-[30rem] mt-10"> 
+                <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                class="w-full max-w-[30rem] rounded-full p-4 border-none rea max-sm:mx-5"/>
+
+                <button 
+                    class="bg-[#2231a5] w-11 h-11 rounded-full text-white 
+                            font-bold absolute right-3 cursor-pointer shadow-lg active:shadow-inner active:bg-[#181d43] max-sm:mx-5  ">&#62;</button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <Footer class="w-full max-w-[69.813rem] mx-auto flex flex-row justify-between mt-20">
+      <div>
+        <div class="w-full mx-auto text-lg font-normal text-[#63657E]">
+          <!-- logo -->
+          <img src="./img-Nuk/logo.png" alt="logo" class="max-sm:px-4">
+
+          <!-- Responsive design that replaces the Desktop version  -->
+          <!-- Responsive design that replaces the Desktop version  -->
+          <!-- Responsive design that replaces the Desktop version  -->
+          <div class="text-lg font-normal text-[#63657E] mt-10 block sm:hidden max-sm:px-4">
+            Winged moving moveth created for shall and devide the their day mail midst shall hath doesn't won't for.Midst life.Over a great night
+          </div>
+
+          <div class="flex relative left-2 gap-4 mt-10 flex-shrink-0 sm:hidden max-sm:px-2 ">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="./img-Nuk/facebook.png" alt="facebook" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <img src="./img-Nuk/twister-mobile.png" alt="twitter" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">  
+              <img src="./img-Nuk/linkedin-mobile.png" alt="linkedin" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>  
+            <a href="https://www.youtube.com/" target="_blank">  
+              <img src="./img-Nuk/youtube-mobile.png" alt="youtube" class="border-0 h-9 w-9 bg-blue-100 rounded-full p-2">
+            </a>  
+          </div>
+
+          <div class="sm:hidden max-sm:px-2 ">
+              <div class="pt-12 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Customer Support</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+              
+              <div class="pt-10 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Quick Links</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+          
+              <div class="pt-10 px-3 flex justify-between w-full border-b border-[rgba(112,117,156,0.3)] pb-7">
+                <span class="text-xl font-medium text-[#0B0757]">Resources</span>
+                <span class="relative top-1.5">&#x25BC</span>
+              </div>
+
+            </div>
+
+            <p class="flex justify-center pt-11 pb-12 text-lg font-normal text-[#8480AE] sm:hidden max-sm:px-2">Copyright &copy;2021 Quicklinks</p>
+                
+            <!-- The Desktop version -->
+            <!-- The Desktop version -->
+            <!-- The Desktop version -->
+
+          <!-- Mail -->
+          <div id="mail" class="mt-16 mb-5 max-sm:hidden">
+            <img src="./img-Nuk/Mail.png" alt="mail" class="inline pr-2"> 
+            <a href="mailto:quickspace@gmail.com">
+              <span class="hover:underline">quickspace@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- Telephone Number -->
+          <div id="tel" class="max-sm:hidden">
+            <a href="tel:548457369555">
+              <img src="./img-Nuk/Tel.png" alt="tel" class="inline pr-3 "> <span class="hover:underline">548 457 3695 55</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home -->
+      <div class="max-sm:hidden">
+        <p class="text-2xl font-medium text-[#090F4E]">Home</p>
+        <div class="flex flex-col mt-10 gap-4">
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Accesibility</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Certification</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Knowledge Base</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Documentation</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">User Group</a>
+        </div>
+      </div>
+          <!-- Page -->
+      <div class="max-sm:hidden">
+        <p class="text-2xl font-medium text-[#090F4E]">Pages</p>
+        <div class="flex flex-col mt-10 gap-4">
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Blogs</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Careers</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Communities</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Webinars</a>
+          <a href="#" class="text-lg font-normal text-[#63657E] hover:underline active:text-[#9092b6]">Videos</a>
+        </div>
+      </div>
+          <!-- Our Address -->
+      <div class="max-sm:hidden">
+        <p class="text-2xl font-medium text-[#090F4E]">Our Address</p>
+        <div class="text-lg font-normal text-[#63657E] mt-10 gap-1">
+          <a href="https://maps.app.goo.gl/S7gWHhuBFe3bQV2f8" target="_blank">
+            <img src="./img-Nuk/location.png" alt="location" class="inline"> <span>London, New area</span>  <p class="relative left-7">road 04, England</p>
+          </a>
+        </div>
+        <div class="flex relative left-2 gap-4 mt-10">
+          <a href="https://www.google.com" target="_blank">
+            <img src="./img-Nuk/google.png" alt="google">
+          </a>
+          <a href="https://x.com/" target="_blank">
+            <img src="./img-Nuk/twitter.png" alt="twitter">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">  
+            <img src="./img-Nuk/instagram.png" alt="instagram">
+          </a>  
+          <a href="https://www.linkedin.com/" target="_blank">  
+            <img src="./img-Nuk/linkedin.png" alt="linkedin">
+          </a>  
+        </div>
+      </div>
+
+    </Footer>
+    
+    <footer class="w-full max-w-[69.813rem] mx-auto flex justify-between mt-[6rem] text-lg font-normal text-[#63657E] max-sm:hidden">
+        <div>
+          <p>Copyright &copy;2021 Quickspace. All Rights Reserved</p>
+        </div>
+  
+        <div class="flex gap-12">
+          <a href="#" class="hover:underline active:text-[#9092b6]">Home</a>
+          <a href="#" class="hover:underline active:text-[#9092b6]">Team</a>
+          <a href="#" class="hover:underline active:text-[#9092b6]">Privecy policy</a>
+          <a href="#" class="hover:underline active:text-[#9092b6]">Contact</a>
+        </div>
+      
+
+    </footer>
+
   </body>
 </html>
